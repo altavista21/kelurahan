@@ -18,7 +18,8 @@ export default function UMKM() {
     const matchesSearch =
       umkm.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       umkm.description.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesCategory = !selectedCategory || umkm.category === selectedCategory;
+    const matchesCategory =
+      !selectedCategory || umkm.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
 
@@ -42,7 +43,10 @@ export default function UMKM() {
           {/* Search Bar */}
           <div className="mb-8">
             <div className="relative">
-              <Search className="absolute left-4 top-3 text-slate-400" size={20} />
+              <Search
+                className="absolute left-4 top-3 text-slate-400"
+                size={20}
+              />
               <input
                 type="text"
                 placeholder="Cari UMKM atau produk..."
@@ -140,16 +144,26 @@ export default function UMKM() {
                           <span className="text-slate-600 text-sm font-medium min-w-fit">
                             Pemilik:
                           </span>
-                          <span className="text-slate-700 text-sm">{umkm.owner}</span>
+                          <span className="text-slate-700 text-sm">
+                            {umkm.owner}
+                          </span>
                         </div>
 
                         <div className="flex items-start gap-3">
-                          <MapPin size={16} className="text-slate-600 mt-0.5 flex-shrink-0" />
-                          <span className="text-slate-700 text-sm">{umkm.address}</span>
+                          <MapPin
+                            size={16}
+                            className="text-slate-600 mt-0.5 flex-shrink-0"
+                          />
+                          <span className="text-slate-700 text-sm">
+                            {umkm.address}
+                          </span>
                         </div>
 
                         <div className="flex items-center gap-3">
-                          <Phone size={16} className="text-slate-600 flex-shrink-0" />
+                          <Phone
+                            size={16}
+                            className="text-slate-600 flex-shrink-0"
+                          />
                           <a
                             href={`tel:${umkm.phone}`}
                             className="text-blue-600 hover:text-blue-700 text-sm font-medium"
@@ -184,7 +198,8 @@ export default function UMKM() {
             Punya UMKM dan ingin mendaftarkan?
           </h2>
           <p className="text-slate-600 mb-6">
-            Hubungi kantor kelurahan untuk mendaftarkan bisnis Anda di direktori UMKM
+            Hubungi kantor kelurahan untuk mendaftarkan bisnis Anda di direktori
+            UMKM
           </p>
           <a
             href="https://wa.me/6281234567890"

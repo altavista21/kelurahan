@@ -1,14 +1,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { kelurahanInfo } from "@/lib/data";
-import {
-  MapPin,
-  Phone,
-  Mail,
-  Clock,
-  MessageCircle,
-  Globe,
-} from "lucide-react";
+import { MapPin, Phone, Mail, Clock, MessageCircle, Globe } from "lucide-react";
 import { useState } from "react";
 
 export default function Kontak() {
@@ -20,7 +13,9 @@ export default function Kontak() {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -28,7 +23,7 @@ export default function Kontak() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     alert(
-      `Terima kasih ${formData.name}. Pesan Anda telah kami terima dan akan kami tanggapi segera.`
+      `Terima kasih ${formData.name}. Pesan Anda telah kami terima dan akan kami tanggapi segera.`,
     );
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
   };
@@ -66,8 +61,12 @@ export default function Kontak() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">Alamat</h3>
-                    <p className="text-slate-600 mt-2">{kelurahanInfo.address}</p>
+                    <h3 className="text-lg font-semibold text-slate-900">
+                      Alamat
+                    </h3>
+                    <p className="text-slate-600 mt-2">
+                      {kelurahanInfo.address}
+                    </p>
                   </div>
                 </div>
 
@@ -79,9 +78,14 @@ export default function Kontak() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">Telepon</h3>
+                    <h3 className="text-lg font-semibold text-slate-900">
+                      Telepon
+                    </h3>
                     <p className="text-slate-600 mt-2">
-                      <a href={`tel:${kelurahanInfo.phone}`} className="hover:text-blue-600 transition">
+                      <a
+                        href={`tel:${kelurahanInfo.phone}`}
+                        className="hover:text-blue-600 transition"
+                      >
                         {kelurahanInfo.phone}
                       </a>
                     </p>
@@ -96,9 +100,14 @@ export default function Kontak() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">Email</h3>
+                    <h3 className="text-lg font-semibold text-slate-900">
+                      Email
+                    </h3>
                     <p className="text-slate-600 mt-2">
-                      <a href={`mailto:${kelurahanInfo.email}`} className="hover:text-blue-600 transition">
+                      <a
+                        href={`mailto:${kelurahanInfo.email}`}
+                        className="hover:text-blue-600 transition"
+                      >
                         {kelurahanInfo.email}
                       </a>
                     </p>
@@ -132,7 +141,9 @@ export default function Kontak() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">WhatsApp</h3>
+                    <h3 className="text-lg font-semibold text-slate-900">
+                      WhatsApp
+                    </h3>
                     <p className="text-slate-600 mt-2">
                       <a
                         href="https://wa.me/6281234567890"
@@ -155,7 +166,9 @@ export default function Kontak() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">Website</h3>
+                    <h3 className="text-lg font-semibold text-slate-900">
+                      Website
+                    </h3>
                     <p className="text-slate-600 mt-2">
                       <a href="/" className="hover:text-blue-600 transition">
                         www.kelurahansejahtera.go.id
@@ -168,7 +181,9 @@ export default function Kontak() {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-8">Kirim Pesan</h2>
+              <h2 className="text-3xl font-bold text-slate-900 mb-8">
+                Kirim Pesan
+              </h2>
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>

@@ -29,7 +29,9 @@ export default function Header() {
               <span className="text-2xl font-bold text-blue-600">🏛️</span>
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-white">Kelurahan Merdeka</h1>
+              <h1 className="text-xl font-bold text-white">
+                Kelurahan Merdeka
+              </h1>
               <p className="text-blue-100 text-xs">Pelayanan Publik Terpadu</p>
             </div>
           </Link>

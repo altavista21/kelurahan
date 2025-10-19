@@ -82,7 +82,8 @@ export const news: News[] = [
   {
     id: "1",
     title: "Program Vaksinasi Gratis untuk Warga Kelurahan",
-    excerpt: "Kelurahan mengadakan program vaksinasi gratis untuk semua warga...",
+    excerpt:
+      "Kelurahan mengadakan program vaksinasi gratis untuk semua warga...",
     date: "2024-01-15",
     category: "kesehatan",
     image: "https://via.placeholder.com/600x400?text=Vaksinasi",
@@ -93,7 +94,8 @@ export const news: News[] = [
   {
     id: "2",
     title: "Pembersihan Saluran Air Bulanan",
-    excerpt: "Kegiatan pembersihan saluran air diselenggarakan untuk mencegah banjir...",
+    excerpt:
+      "Kegiatan pembersihan saluran air diselenggarakan untuk mencegah banjir...",
     date: "2024-01-10",
     category: "lingkungan",
     image: "https://via.placeholder.com/600x400?text=Pembersihan",
@@ -104,7 +106,8 @@ export const news: News[] = [
   {
     id: "3",
     title: "Pameran UMKM Warga Kelurahan",
-    excerpt: "Dukung produk lokal melalui pameran UMKM yang akan segera dilaksanakan...",
+    excerpt:
+      "Dukung produk lokal melalui pameran UMKM yang akan segera dilaksanakan...",
     date: "2024-01-05",
     category: "ekonomi",
     image: "https://via.placeholder.com/600x400?text=UMKM",
@@ -163,7 +166,8 @@ export const complaints: Complaint[] = [
     referenceNumber: "ADU-2024-001",
     category: "fasilitas umum",
     title: "Jalan berlubang di Jalan Merdeka",
-    description: "Ada lubang besar di jalan merdeka yang membahayakan kendaraan",
+    description:
+      "Ada lubang besar di jalan merdeka yang membahayakan kendaraan",
     status: "diproses",
     date: "2024-01-14",
   },
@@ -172,7 +176,8 @@ export const complaints: Complaint[] = [
     referenceNumber: "ADU-2024-002",
     category: "keamanan",
     title: "Lampu jalan mati",
-    description: "Lampu jalan di sekitar taman sudah tidak berfungsi berbulan-bulan",
+    description:
+      "Lampu jalan di sekitar taman sudah tidak berfungsi berbulan-bulan",
     status: "diterima",
     date: "2024-01-15",
   },

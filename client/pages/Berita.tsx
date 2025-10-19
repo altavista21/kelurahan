@@ -6,7 +6,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Berita() {
-  const [selectedNews, setSelectedNews] = useState<typeof news[0] | null>(null);
+  const [selectedNews, setSelectedNews] = useState<(typeof news)[0] | null>(
+    null,
+  );
 
   if (selectedNews) {
     return (
@@ -40,7 +42,9 @@ export default function Berita() {
               <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">
                 {selectedNews.category.toUpperCase()}
               </span>
-              <span className="text-sm text-slate-600">{selectedNews.date}</span>
+              <span className="text-sm text-slate-600">
+                {selectedNews.date}
+              </span>
               <span className="text-sm text-slate-600">
                 Oleh: {selectedNews.author}
               </span>
@@ -51,15 +55,16 @@ export default function Berita() {
                 {selectedNews.content}
               </p>
               <p className="text-slate-700 leading-relaxed mb-6">
-                Kelurahan Merdeka terus berinovasi dalam memberikan informasi dan
-                layanan publik yang terbaik bagi warganya. Setiap berita dan
-                pengumuman disampaikan dengan transparan untuk memastikan seluruh
-                warga mendapatkan informasi yang akurat dan tepat waktu.
+                Kelurahan Merdeka terus berinovasi dalam memberikan informasi
+                dan layanan publik yang terbaik bagi warganya. Setiap berita dan
+                pengumuman disampaikan dengan transparan untuk memastikan
+                seluruh warga mendapatkan informasi yang akurat dan tepat waktu.
               </p>
               <p className="text-slate-700 leading-relaxed">
-                Kami mengajak seluruh warga untuk terus berpartisipasi dalam setiap
-                kegiatan dan program yang diselenggarakan oleh kelurahan. Bersama
-                kita bisa menciptakan lingkungan yang lebih baik dan sejahtera.
+                Kami mengajak seluruh warga untuk terus berpartisipasi dalam
+                setiap kegiatan dan program yang diselenggarakan oleh kelurahan.
+                Bersama kita bisa menciptakan lingkungan yang lebih baik dan
+                sejahtera.
               </p>
             </div>
           </div>
@@ -103,8 +108,12 @@ export default function Berita() {
                   </h2>
                   <p className="text-slate-300 mb-4">{news[0].excerpt}</p>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-slate-400">{news[0].date}</span>
-                    <span className="text-green-400 font-semibold">Baca Selengkapnya →</span>
+                    <span className="text-sm text-slate-400">
+                      {news[0].date}
+                    </span>
+                    <span className="text-green-400 font-semibold">
+                      Baca Selengkapnya →
+                    </span>
                   </div>
                 </div>
                 <div className="bg-gradient-to-r from-green-400 to-green-600 flex items-center justify-center text-6xl">
@@ -134,9 +143,13 @@ export default function Berita() {
                   <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-green-600 transition">
                     {article.title}
                   </h3>
-                  <p className="text-sm text-slate-600 mb-4">{article.excerpt}</p>
+                  <p className="text-sm text-slate-600 mb-4">
+                    {article.excerpt}
+                  </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-xs text-slate-500">{article.date}</span>
+                    <span className="text-xs text-slate-500">
+                      {article.date}
+                    </span>
                     <span className="text-green-600 font-semibold text-sm">
                       Baca →
                     </span>

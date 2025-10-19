@@ -124,8 +124,13 @@ export default function Index() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service) => (
-              <Link key={service.id} to={`/${service.name.toLowerCase().replace(/\s+/g, "-")}`}>
-                <div className={`bg-gradient-to-br ${service.color} text-white rounded-xl p-8 cursor-pointer transform hover:scale-105 transition shadow-lg`}>
+              <Link
+                key={service.id}
+                to={`/${service.name.toLowerCase().replace(/\s+/g, "-")}`}
+              >
+                <div
+                  className={`bg-gradient-to-br ${service.color} text-white rounded-xl p-8 cursor-pointer transform hover:scale-105 transition shadow-lg`}
+                >
                   <div className="text-5xl mb-4">{service.icon}</div>
                   <h3 className="text-xl font-bold mb-2">{service.name}</h3>
                   <p className="text-sm opacity-90">{service.description}</p>
@@ -166,7 +171,13 @@ export default function Index() {
                 className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition"
               >
                 <div className="h-48 bg-gradient-to-r from-blue-400 to-green-400 flex items-center justify-center">
-                  <div className="text-6xl opacity-50">{article.category === "kesehatan" ? "🏥" : article.category === "lingkungan" ? "🌍" : "💼"}</div>
+                  <div className="text-6xl opacity-50">
+                    {article.category === "kesehatan"
+                      ? "🏥"
+                      : article.category === "lingkungan"
+                        ? "🌍"
+                        : "💼"}
+                  </div>
                 </div>
                 <div className="p-6">
                   <p className="text-sm text-blue-600 font-semibold mb-2">
@@ -175,9 +186,13 @@ export default function Index() {
                   <h3 className="text-lg font-bold text-slate-900 mb-2">
                     {article.title}
                   </h3>
-                  <p className="text-sm text-slate-600 mb-4">{article.excerpt}</p>
+                  <p className="text-sm text-slate-600 mb-4">
+                    {article.excerpt}
+                  </p>
                   <div className="flex justify-between items-center">
-                    <span className="text-xs text-slate-500">{article.date}</span>
+                    <span className="text-xs text-slate-500">
+                      {article.date}
+                    </span>
                     <Link
                       to="/berita"
                       className="text-blue-600 hover:text-blue-700 font-semibold text-sm"
@@ -230,8 +245,12 @@ export default function Index() {
                   <p className="text-xs text-green-600 font-semibold mb-2">
                     {umkm.category.toUpperCase()}
                   </p>
-                  <p className="text-sm text-slate-600 mb-3">{umkm.description}</p>
-                  <p className="text-xs text-slate-500 mb-2">Pemilik: {umkm.owner}</p>
+                  <p className="text-sm text-slate-600 mb-3">
+                    {umkm.description}
+                  </p>
+                  <p className="text-xs text-slate-500 mb-2">
+                    Pemilik: {umkm.owner}
+                  </p>
                   <a
                     href={`https://wa.me/62${umkm.phone.slice(1)}`}
                     className="text-xs text-blue-600 hover:text-blue-700 font-semibold"
@@ -319,9 +338,7 @@ export default function Index() {
             <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-8 border border-white border-opacity-20 text-center">
               <div className="text-6xl mb-4">👨‍⚖️</div>
               <h3 className="text-2xl font-bold mb-2">Sambutan Lurah</h3>
-              <p className="text-blue-100">
-                {kelurahanInfo.lurahName}
-              </p>
+              <p className="text-blue-100">{kelurahanInfo.lurahName}</p>
             </div>
             <div>
               <h3 className="text-2xl md:text-3xl font-bold mb-4">

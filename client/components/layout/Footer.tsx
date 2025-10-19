@@ -15,7 +15,8 @@ export default function Footer() {
               <span>{kelurahanInfo.name}</span>
             </h3>
             <p className="text-sm text-slate-400">
-              Pelayanan publik online yang transparan dan mudah diakses oleh seluruh warga.
+              Pelayanan publik online yang transparan dan mudah diakses oleh
+              seluruh warga.
             </p>
           </div>
 
@@ -24,22 +25,34 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Menu Cepat</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="/" className="text-slate-400 hover:text-white transition">
+                <a
+                  href="/"
+                  className="text-slate-400 hover:text-white transition"
+                >
                   Beranda
                 </a>
               </li>
               <li>
-                <a href="/profil" className="text-slate-400 hover:text-white transition">
+                <a
+                  href="/profil"
+                  className="text-slate-400 hover:text-white transition"
+                >
                   Profil Kelurahan
                 </a>
               </li>
               <li>
-                <a href="/pelayanan" className="text-slate-400 hover:text-white transition">
+                <a
+                  href="/pelayanan"
+                  className="text-slate-400 hover:text-white transition"
+                >
                   Pelayanan Online
                 </a>
               </li>
               <li>
-                <a href="/aduan" className="text-slate-400 hover:text-white transition">
+                <a
+                  href="/aduan"
+                  className="text-slate-400 hover:text-white transition"
+                >
                   Aduan Warga
                 </a>
               </li>
@@ -51,18 +64,27 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Kontak</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-3">
-                <MapPin size={16} className="mt-1 text-green-400 flex-shrink-0" />
+                <MapPin
+                  size={16}
+                  className="mt-1 text-green-400 flex-shrink-0"
+                />
                 <span className="text-slate-400">{kelurahanInfo.address}</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={16} className="text-green-400" />
-                <a href={`tel:${kelurahanInfo.phone}`} className="text-slate-400 hover:text-white transition">
+                <a
+                  href={`tel:${kelurahanInfo.phone}`}
+                  className="text-slate-400 hover:text-white transition"
+                >
                   {kelurahanInfo.phone}
                 </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={16} className="text-green-400" />
-                <a href={`mailto:${kelurahanInfo.email}`} className="text-slate-400 hover:text-white transition">
+                <a
+                  href={`mailto:${kelurahanInfo.email}`}
+                  className="text-slate-400 hover:text-white transition"
+                >
                   {kelurahanInfo.email}
                 </a>
               </li>
@@ -103,7 +125,8 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-slate-700 pt-8">
           <p className="text-center text-sm text-slate-400">
-            &copy; {currentYear} {kelurahanInfo.name}. Semua hak dilindungi. | Dikembangkan dengan ❤️
+            &copy; {currentYear} {kelurahanInfo.name}. Semua hak dilindungi. |
+            Dikembangkan dengan ❤️
           </p>
         </div>
       </div>

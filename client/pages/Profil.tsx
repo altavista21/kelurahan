@@ -12,7 +12,9 @@ export default function Profil() {
       <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-12">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold">Profil Kelurahan</h1>
-          <p className="text-blue-100 mt-2">Mengenal lebih dekat {kelurahanInfo.name}</p>
+          <p className="text-blue-100 mt-2">
+            Mengenal lebih dekat {kelurahanInfo.name}
+          </p>
         </div>
       </section>
 
@@ -31,7 +33,9 @@ export default function Profil() {
                   <p className="text-slate-600">{kelurahanInfo.address}</p>
                 </div>
                 <div className="border-l-4 border-green-600 pl-4">
-                  <h3 className="font-bold text-slate-900 mb-2">Wilayah Administratif</h3>
+                  <h3 className="font-bold text-slate-900 mb-2">
+                    Wilayah Administratif
+                  </h3>
                   <p className="text-slate-600">
                     {kelurahanInfo.district}, {kelurahanInfo.city}
                   </p>
@@ -45,7 +49,9 @@ export default function Profil() {
 
             {/* Statistics */}
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">Statistik Wilayah</h2>
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">
+                Statistik Wilayah
+              </h2>
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-blue-100 to-blue-50 rounded-lg p-6">
                   <div className="flex items-center justify-between">
@@ -107,20 +113,31 @@ export default function Profil() {
           <div className="bg-slate-50 rounded-xl p-8 mb-16">
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Sejarah</h2>
             <p className="text-slate-700 leading-relaxed mb-4">
-              {kelurahanInfo.name} memiliki sejarah panjang sebagai wilayah administratif yang berkembang pesat. Sejak didirikan, kelurahan ini telah menjadi pusat kegiatan ekonomi, sosial, dan budaya di wilayahnya.
+              {kelurahanInfo.name} memiliki sejarah panjang sebagai wilayah
+              administratif yang berkembang pesat. Sejak didirikan, kelurahan
+              ini telah menjadi pusat kegiatan ekonomi, sosial, dan budaya di
+              wilayahnya.
             </p>
             <p className="text-slate-700 leading-relaxed">
-              Dengan terus berinovasi dalam memberikan pelayanan publik, {kelurahanInfo.name} berkomitmen untuk meningkatkan kualitas hidup warganya dan menciptakan lingkungan yang aman, nyaman, dan sejahtera.
+              Dengan terus berinovasi dalam memberikan pelayanan publik,{" "}
+              {kelurahanInfo.name} berkomitmen untuk meningkatkan kualitas hidup
+              warganya dan menciptakan lingkungan yang aman, nyaman, dan
+              sejahtera.
             </p>
           </div>
 
           {/* Struktur Organisasi */}
           <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-xl p-8">
-            <h2 className="text-2xl font-bold text-slate-900 mb-6">Struktur Organisasi</h2>
+            <h2 className="text-2xl font-bold text-slate-900 mb-6">
+              Struktur Organisasi
+            </h2>
             <p className="text-slate-600 mb-8">
-              Kelurahan {kelurahanInfo.name} dipimpin oleh seorang Lurah yang bertanggung jawab atas pengelolaan administrasi dan pelayanan publik. Organisasi kelurahan terdiri dari beberapa bagian/seksi yang bekerja secara koordinatif untuk melayani kebutuhan warga.
+              Kelurahan {kelurahanInfo.name} dipimpin oleh seorang Lurah yang
+              bertanggung jawab atas pengelolaan administrasi dan pelayanan
+              publik. Organisasi kelurahan terdiri dari beberapa bagian/seksi
+              yang bekerja secara koordinatif untuk melayani kebutuhan warga.
             </p>
-            
+
             <div className="bg-white rounded-lg p-6 border-2 border-blue-200">
               <div className="text-center mb-8">
                 <div className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold">

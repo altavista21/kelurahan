@@ -23,7 +23,9 @@ export default function Pelayanan() {
       <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-12">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold">Pelayanan Online</h1>
-          <p className="text-blue-100 mt-2">Ajukan surat keterangan dengan mudah dan cepat</p>
+          <p className="text-blue-100 mt-2">
+            Ajukan surat keterangan dengan mudah dan cepat
+          </p>
         </div>
       </section>
 
@@ -117,7 +119,10 @@ export default function Pelayanan() {
                         Upload Dokumen Pendukung
                       </label>
                       <div className="border-2 border-dashed border-blue-300 rounded-lg p-6 text-center cursor-pointer hover:border-blue-600 transition">
-                        <Upload size={32} className="mx-auto text-blue-600 mb-2" />
+                        <Upload
+                          size={32}
+                          className="mx-auto text-blue-600 mb-2"
+                        />
                         <p className="text-sm text-slate-600">
                           Klik untuk upload atau drag & drop
                         </p>
@@ -135,14 +140,26 @@ export default function Pelayanan() {
 
                 <div className="bg-green-50 border border-green-200 rounded-xl p-6">
                   <div className="flex items-start">
-                    <CheckCircle size={24} className="text-green-600 mr-4 flex-shrink-0 mt-1" />
+                    <CheckCircle
+                      size={24}
+                      className="text-green-600 mr-4 flex-shrink-0 mt-1"
+                    />
                     <div>
-                      <h4 className="font-bold text-green-900 mb-2">Informasi Penting</h4>
+                      <h4 className="font-bold text-green-900 mb-2">
+                        Informasi Penting
+                      </h4>
                       <ul className="text-sm text-green-800 space-y-1">
-                        <li>• Pengajuan akan diproses dalam waktu 1-2 hari kerja</li>
-                        <li>• Anda akan menerima notifikasi saat status berubah</li>
+                        <li>
+                          • Pengajuan akan diproses dalam waktu 1-2 hari kerja
+                        </li>
+                        <li>
+                          • Anda akan menerima notifikasi saat status berubah
+                        </li>
                         <li>• Surat dapat diunduh setelah selesai diproses</li>
-                        <li>• Surat dilengkapi dengan QR Code untuk verifikasi keaslian</li>
+                        <li>
+                          • Surat dilengkapi dengan QR Code untuk verifikasi
+                          keaslian
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -207,7 +224,9 @@ export default function Pelayanan() {
                           <div className="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">
                             ✓
                           </div>
-                          <p className="text-xs text-slate-600 mt-1">Diterima</p>
+                          <p className="text-xs text-slate-600 mt-1">
+                            Diterima
+                          </p>
                         </div>
                         <div className="flex-1 h-1 bg-green-600 mx-2"></div>
                         <div className="flex flex-col items-center">
@@ -220,11 +239,14 @@ export default function Pelayanan() {
                           >
                             {request.status !== "perlu_verifikasi" ? "✓" : "2"}
                           </div>
-                          <p className="text-xs text-slate-600 mt-1">Diproses</p>
+                          <p className="text-xs text-slate-600 mt-1">
+                            Diproses
+                          </p>
                         </div>
                         <div
                           className={`flex-1 h-1 mx-2 ${
-                            request.status === "siap_diambil" || request.status === "selesai"
+                            request.status === "siap_diambil" ||
+                            request.status === "selesai"
                               ? "bg-green-600"
                               : "bg-slate-300"
                           }`}
@@ -232,7 +254,8 @@ export default function Pelayanan() {
                         <div className="flex flex-col items-center">
                           <div
                             className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold ${
-                              request.status === "siap_diambil" || request.status === "selesai"
+                              request.status === "siap_diambil" ||
+                              request.status === "selesai"
                                 ? "bg-green-600 text-white"
                                 : "bg-slate-300 text-slate-600"
                             }`}

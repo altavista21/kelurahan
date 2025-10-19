@@ -149,7 +149,10 @@ export default function Aduan() {
                         Upload Foto Pendukung
                       </label>
                       <div className="border-2 border-dashed border-purple-300 rounded-lg p-6 text-center cursor-pointer hover:border-purple-600 transition">
-                        <Upload size={32} className="mx-auto text-purple-600 mb-2" />
+                        <Upload
+                          size={32}
+                          className="mx-auto text-purple-600 mb-2"
+                        />
                         <p className="text-sm text-slate-600">
                           Klik untuk upload atau drag & drop
                         </p>
@@ -167,13 +170,20 @@ export default function Aduan() {
 
                 <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
                   <div className="flex items-start">
-                    <CheckCircle size={24} className="text-blue-600 mr-4 flex-shrink-0 mt-1" />
+                    <CheckCircle
+                      size={24}
+                      className="text-blue-600 mr-4 flex-shrink-0 mt-1"
+                    />
                     <div>
-                      <h4 className="font-bold text-blue-900 mb-2">Tips Membuat Laporan</h4>
+                      <h4 className="font-bold text-blue-900 mb-2">
+                        Tips Membuat Laporan
+                      </h4>
                       <ul className="text-sm text-blue-800 space-y-1">
                         <li>• Jelaskan masalah dengan detail dan jelas</li>
                         <li>• Sertakan foto pendukung jika memungkinkan</li>
-                        <li>• Berikan lokasi yang spesifik dan mudah dipahami</li>
+                        <li>
+                          • Berikan lokasi yang spesifik dan mudah dipahami
+                        </li>
                         <li>• Laporan yang baik akan ditanggapi lebih cepat</li>
                       </ul>
                     </div>
@@ -245,7 +255,9 @@ export default function Aduan() {
                           <div className="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">
                             ✓
                           </div>
-                          <p className="text-xs text-slate-600 mt-1">Diterima</p>
+                          <p className="text-xs text-slate-600 mt-1">
+                            Diterima
+                          </p>
                         </div>
                         <div className="flex-1 h-1 bg-green-600 mx-2"></div>
                         <div className="flex flex-col items-center">
@@ -258,7 +270,9 @@ export default function Aduan() {
                           >
                             {complaint.status !== "diterima" ? "✓" : "2"}
                           </div>
-                          <p className="text-xs text-slate-600 mt-1">Diproses</p>
+                          <p className="text-xs text-slate-600 mt-1">
+                            Diproses
+                          </p>
                         </div>
                         <div
                           className={`flex-1 h-1 mx-2 ${
